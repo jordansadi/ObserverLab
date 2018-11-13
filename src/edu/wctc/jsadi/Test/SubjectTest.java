@@ -6,16 +6,16 @@ import org.junit.*;
 public class SubjectTest extends junit.framework.TestCase {
     public SubjectTest() {}
 
-    public Subject testSubject;
+    private Subject testSubject;
 
     @Before
-    public void setUp() {
+    public void setUp() throws Exception {
         testSubject = new Subject();
         testSubject.setState(100);
     }
 
     @After
-    public void tearDown() {}
+    public void tearDown() throws Exception {}
 
     @Test
     public void testGetState() {
